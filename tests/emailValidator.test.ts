@@ -1,30 +1,29 @@
 import { isValidEmail } from "../src/emailValidator";
 
-
-test("email valide", () => {
+test("valid email should return true", () => {
   expect(isValidEmail("test@mail.com")).toBe(true);
 });
 
-test("email sans @ est invalide", () => {
+test("email without @ should be invalid", () => {
   expect(isValidEmail("testmail.com")).toBe(false);
 });
 
-test("email avec espace est invalide", () => {
+test("email with space should be invalid", () => {
   expect(isValidEmail("test @mail.com")).toBe(false);
 });
 
-test("email sans point dans le domaine est invalide", () => {
+test("email without dot in domain should be invalid", () => {
   expect(isValidEmail("test@mailcom")).toBe(false);
 });
 
-test("email avec point en dernier caractère est invalide", () => {
+test("email with dot at end should be invalid", () => {
   expect(isValidEmail("test@mail.")).toBe(false);
 });
 
-test("email sans texte avant @ est invalide", () => {
+test("email without local part should be invalid", () => {
   expect(isValidEmail("@mail.com")).toBe(false);
 });
 
-test("email sans texte après @ est invalide", () => {
+test("email without domain part should be invalid", () => {
   expect(isValidEmail("test@")).toBe(false);
 });
