@@ -17,3 +17,6 @@ test("email sans point dans le domaine est invalide", () => {
   expect(isValidEmail("test@mailcom")).toBe(false);
 });
 
+test("email avec point en dernier caractère est invalide", () => {
+  expect(isValidEmail("test@mail.")).toBe(false);
+});
