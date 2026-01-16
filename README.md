@@ -1,13 +1,13 @@
-# EXAMEN DE DEVOPS : IPL social
+# DEVOPS EXAM – IPL Social - JANUARY 2026
 
 # AUTHOR 
-Asma Mellah 
-asma.mellah@student.vinci.be
+Student : Asma Mellah 
+Email   : asma.mellah@student.vinci.be
 
 # REPOSITORY
 https://github.com/asma-mellah-vinci/IPL-social
 
-# DESCRIPTION
+# PROJECT DESCRIPTION
 
 This project was developed for the DevOps course exam.
 It contains an email validation function written in TypeScript using
