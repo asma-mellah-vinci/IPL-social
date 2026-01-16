@@ -12,3 +12,8 @@ test("email sans @ est invalide", () => {
 test("email avec espace est invalide", () => {
   expect(isValidEmail("test @mail.com")).toBe(false);
 });
+
+test("email sans point dans le domaine est invalide", () => {
+  expect(isValidEmail("test@mailcom")).toBe(false);
+});
+
