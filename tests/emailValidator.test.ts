@@ -24,3 +24,7 @@ test("email avec point en dernier caractère est invalide", () => {
 test("email sans texte avant @ est invalide", () => {
   expect(isValidEmail("@mail.com")).toBe(false);
 });
+
+test("email sans texte après @ est invalide", () => {
+  expect(isValidEmail("test@")).toBe(false);
+});
